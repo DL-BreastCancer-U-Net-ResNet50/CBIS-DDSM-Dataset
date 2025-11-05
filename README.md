@@ -63,7 +63,6 @@ Cada imagen en el dataset incluye metadatos y anotaciones en formato DICOM. Las 
 - **Clasificación BI-RADS**: Evaluación general de BI-RADS de 0 a 5
 - **Patología**: Benigno, Benigno sin callback, o Maligno
 
-Además, el dataset incluye otras etiquetas relevantes como el `patient_id`, `breast_density`, `subtlety`, entre otros.
 
 ## Ejemplo de Uso
 
@@ -72,15 +71,18 @@ Este dataset es adecuado para:
 - **Segmentación de instancias**: Etiquetado a nivel de píxel de estructuras anómalas.
 - **Segmentación semántica**: Un solo "máscara" para cada clase anómala en las imágenes de mamografía.
 
+
+## Conjunto de Validación Externa (Aporte Local)
+
+Adicionalmente a los datos base del CBIS-DDSM, este proyecto incorpora un conjunto de validación esencial para probar la generalización del modelo en un entorno clínico real:
+
+* Imágenes de Validación Externa (Experimento Local): 20 mamografías reales de pacientes peruanas.
+
+* Propósito: Evaluar la eficacia del modelo entrenado en un contexto clínico distinto al del dataset de entrenamiento, simulando su aplicación en hospitales públicos del Perú.
+
+
 ## Enlaces de Referencia
 
-- [Publicación de Investigación](#) - Enlace a la publicación relacionada
-- [Dataset Original en Stanford University](#) - Enlace al sitio de Stanford
-- [Kaggle Dataset](#) - Enlace a Kaggle si está disponible
+- [Dataset Original](https://www.cancerimagingarchive.net/collection/cbis-ddsm/) - Enlace al sitio de The Cancer Imaging Archive
 
-## Licencia
-
-Este dataset fue desarrollado a partir de la base de datos DDSM con fondos del **DOD Breast Cancer Research Program, US Army Research and Material Command**. Los consentimientos de los pacientes fueron obtenidos por los desarrolladores originales del DDSM.
-
-**Nota**: Este README es solo una descripción del contenido del dataset. Asegúrate de revisar y cumplir con los términos de uso del dataset en el sitio web oficial antes de utilizarlo en investigaciones o proyectos.
-
+- [CBIS-DDSM - Dataset Ninja](https://datasetninja.com/cbis-ddsm) - Enlace a Dataset Ninja si está disponible
